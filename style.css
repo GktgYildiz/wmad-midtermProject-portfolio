@@ -70,7 +70,7 @@ body{
       HERO
 ==============*/
 .hero{
-    background-image: url(/assets/images/herobg.png);
+    background-image: url(./assets/images/herobg.png);
     background-repeat: no-repeat;
     background-attachment: local; 
     background-size: contain;
@@ -88,7 +88,7 @@ body{
     border-radius: 2em;
     grid-area: 1/ha/-1/hb;
     margin: 2em 0 3em 2em;
-    background-image: url(/assets/images/mobileapp.png);
+    background-image: url(./assets/images/mobileapp.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -181,7 +181,7 @@ body{
     border-radius: 2em;
     grid-area: 1/hc/-1/hd;
     margin: 2em 2em 3em 0em;
-    background-image: url(/assets/images/webapp.png);
+    background-image: url(./assets/images/webapp.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
