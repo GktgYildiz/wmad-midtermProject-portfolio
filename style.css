@@ -33,7 +33,13 @@ body{
   .navbar li {
     display: inline-block;
   }
-  
+
+  .navbar li a:hover {
+    color: #EC635E;
+    transform: scale(1.2);
+    text-shadow: none;
+    transition: 0.25s;
+  }
   .navbar li a {
     display: flex;
     text-decoration: none;
@@ -95,6 +101,9 @@ body{
     grid-template-columns: 1fr 10fr 1fr;
     align-items: end;
 }
+.hero a{
+    display: contents;
+}
 .card1 p{
     grid-area: 3 / 2 / -1 / 3;
     font-family: 'Encode Sans Semi Expanded', sans-serif;
@@ -106,6 +115,12 @@ body{
     grid-area: 1 / 3 / 2 / -1;
     transform: rotate(-45deg);
     fill: #262626;
+}
+.card1:hover{
+    border:0.2em solid greenyellow;
+    transform: scale(1.025);
+    transition: 0.25s;
+    box-shadow: 0em 0em 6px 3px rgba(1, 137, 164, 0.907); 
 }
 
 /*===================================
@@ -120,6 +135,7 @@ body{
     margin-bottom: -11em;
     justify-items: center;
 }
+
 .card2 img{
     border-radius: 30%;
     margin-top: 2em;
@@ -188,6 +204,12 @@ body{
     grid-template-rows: 1fr 10fr 1fr;
     grid-template-columns: 1fr 10fr 1fr;
     align-items: end;
+}
+.card3:hover{
+    border:0.2em solid greenyellow;
+    transform: scale(1.025);
+    transition: 0.25s;
+    box-shadow: 0em 0em 6px 3px rgba(182, 13, 243, 0.764); ;
 }
 .card3 p{
     grid-area: 3 / 2 / -1 / 3;
@@ -258,6 +280,12 @@ body{
     font-family: 'Fraunces';
     font-size: 2em;
     letter-spacing: 0.05em;
+}
+.resume-btn:hover{
+    border:0.075em solid #F0E878;
+    border-radius: 0.35em;
+    transform: scale(1.05);
+    transition: 0.25s;
 }
 
 /*=====  RIGHT PART  =====*/
@@ -360,6 +388,9 @@ body{
     justify-items: center;
     margin-left: auto;
     margin-right: auto;
+}
+.prj-images a{
+    display: contents;
 }
 
 .project-hr-line{

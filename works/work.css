@@ -34,6 +34,12 @@ html{
     letter-spacing: 0.25em;
 
   }
+  .navbar li a:hover {
+    color: #EC635E;
+    transform: scale(1.2);
+    text-shadow: none;
+    transition: 0.25s;
+  }
   
   .pt2-logo {
     grid-column: 3/4;
@@ -88,6 +94,10 @@ html{
     align-items: center;
 
 }
+.project1 a{
+    display: contents;
+}
+
 .card1{
     display: grid;
     grid-column: 1/-1;
@@ -112,6 +122,13 @@ html{
     grid-row: 1;
     width: 40em;
 }
+.project1-image:hover{
+    border: 0.8em solid  #7F00FF;
+    transition: 0.25s;
+    box-shadow: 0em 0em 6px 3px #EAACB8; ;
+}
+
+
 #card1-headline{
     color: #EAACB8;
     font-family: 'Inter', sans-serif;
@@ -148,6 +165,9 @@ html{
     align-items: center;
 
 }
+.project2 a{
+    display: contents;
+}
 .card2{
     display: grid;
     grid-column: 2/-1;
@@ -176,6 +196,12 @@ html{
     width: 40em;
     margin: 0 10%;
 }
+.project2-image:hover{
+    border: 0.8em solid  #7ACBF5;
+    transition: 0.25s;
+    box-shadow: 0em 0em 6px 3px #fff ; ;
+}
+
 #card2-headline{
     color: #7ACBF5;
     font-family: 'Inter', sans-serif;
@@ -218,6 +244,11 @@ html{
     align-items: center;
 
 }
+
+.project3 a{
+    display: contents;
+}
+
 .card3{
     display: grid;
     grid-column: 1/-1;
@@ -241,6 +272,11 @@ html{
     grid-column: 2/-1;
     grid-row: 1;
     width: 40em;
+}
+.project3-image:hover{
+    border: 0.8em solid  #E26A44;
+    transition: 0.25s;
+    box-shadow: 0em 0em 6px 3px #EED17D; ;
 }
 #card3-headline{
     color: #EED17D;
@@ -297,4 +333,14 @@ html{
     margin: -1em 0 0 0.5em;
     transform: rotate(-45deg) ;
     height: 1.5em;
+}
+.mail-button:hover{
+    border:0.2em solid rgb(155, 254, 142);
+    transform: scale(1.025);
+    transition: 0.25s;
+    text-decoration: underline #48A5E9;
+    
+}
+.mail-button:hover svg{
+    fill:#48A5E9 ;
 }

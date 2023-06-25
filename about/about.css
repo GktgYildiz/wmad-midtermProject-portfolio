@@ -42,6 +42,12 @@ html{
     letter-spacing: 0.25em;
 
   }
+  .navbar li a:hover {
+    color: #EC635E;
+    transform: scale(1.2);
+    text-shadow: none;
+    transition: 0.25s;
+  }
   
   .pt2-logo {
     grid-column: 3/4;
@@ -104,7 +110,11 @@ main{
     font-family: 'Inter', sans-serif;
     color: white;
     font-weight: 700;
+    margin-top: 2em;
 
+}
+.resume{
+    margin: 3em 0em;
 }
 .resume button{
     position: relative;
@@ -115,7 +125,20 @@ main{
     padding: 1.5em 2.2em;
     background-color: transparent !important;
     border: 2px solid #fff;
-  
+}
+.resume button:hover{
+    border-color: #EED17D;
+    transform: scale(1.05);
+    transition: 0.25s;
+    color: #EC635E;
+}
+
+.resume button:hover svg{
+    fill: #EC635E;
+}
+
+.resume a{
+    display: contents;
 }
 .resume svg{
     position: absolute;
@@ -134,5 +157,4 @@ main{
     font-weight: bold;
     text-align: center;
     cursor: pointer;
-  }
-  
+}
