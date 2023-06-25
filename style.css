@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    height: 200vh;
+    height: 460vh;
 }
 
 /*==================
@@ -124,6 +124,7 @@ body{
 .card2 img{
     border-radius: 30%;
     margin-top: 2em;
+    width: 10em;
 }
 .my-title{
     font-family: 'Lateef', serif;
@@ -208,30 +209,62 @@ body{
 ================*/
 .about{
     background-color: #262626;
-    height: 600px;
+    height: 700px;
     border-radius: 2em;
     margin: -14em 2em;
     display: grid   ;
     grid-template-columns: 0.75fr 6fr 0.75fr 4fr 0.75fr;
     grid-template-rows: 2fr 4fr 1fr;
+    box-shadow: 0px 10px 10px #00000025;
 }
 
 /*=====  LEFT PART  =====*/
 .about-left-part{
-    display: grid;
+    display: flex;
     grid-area: 1 / 2 / -1 / 3;
-    border: 2px solid red;
+    /* grid-template-rows: 2fr 4fr 1.25fr;
+    justify-items: center; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center
 }
 
 .about-left-part h2{
-   
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-weight:500;
+    color: #F0E878;
+    font-size: 5em;
+    text-shadow: 0px 5px 12px #F3e3bf33;
+    letter-spacing: 0.075em;
+    margin: 0.5em;
+}
+
+.about-text p{
+    font-family: 'Fraunces', serif;
+    font-weight:400;
+    color: #D9D9D9;
+    font-size: 1.7em;
+    text-shadow: 0px 4px 10px #d9d9d935;
+    letter-spacing: 0.15em;
+    line-height: 2em;
+    text-align: center;
+    margin: 0em 0em 1em 0em;
+}
+.resume-btn button{
+    padding: 0.3em 1.25em;
+    background-color: #ffffff70;
+    border-radius: 0.25em;
+    box-shadow: 0px 4px 4pc #ffffff25;
+    color: #000;
+    font-family: 'Fraunces';
+    font-size: 2em;
+    letter-spacing: 0.05em;
 }
 
 /*=====  RIGHT PART  =====*/
 .about-right-part{
     display: grid;
     grid-area: 2 / 4 / 3 / 5;
-    border: 2px solid blue;
 }
 
 .blop-behind svg{
@@ -242,3 +275,192 @@ body{
     height:15em;
     margin-left: 1.25em;
 }
+
+
+/*===============
+      DEAD FISH
+================*/
+
+.brand-skills{
+    height: 700px;
+    margin: 14em 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+.deadfish{
+    background-color: #B1B1B1;
+    border-radius: 2em;
+    margin: 2em 8em 3em 0em;
+    text-align: center;
+    padding: 0em 2em;
+    box-shadow: 0px 10px 10px #00000025;
+}
+
+.deadfish h2{
+
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-weight:bold;
+    color: #35215D;
+    font-size: 3.5em;
+    text-shadow: 0px 5px 12px #EC635E50;
+    letter-spacing: 0.05em;
+    margin: 0.5em;
+}
+
+.deadfish img{
+    width: 8em;
+    filter: drop-shadow(0px 4px 4px #F0E87899);
+}
+
+.deadfish hr{
+    border: 0.01em solid #262626;
+    width: 22em;
+    filter: opacity(35%);
+}
+
+.deadfish p{
+    font-family: 'Fraunces', serif;
+    font-weight:400;
+    color: #35215D;
+    font-size: 1.4em;
+    text-shadow: 0px 4px 10px #ffffff99;
+    letter-spacing: 0.075em;
+    line-height: 2em;
+    text-align: center;
+}
+
+/*===============
+      SKILLS
+================*/
+
+.skills{
+    text-align: center;
+    margin-right: 1.5em;
+}
+.skills h2{
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-weight:bold;
+    color: #35215D;
+    font-size: 3.5em;
+    text-shadow: 0px 5px 12px #EC635E50;
+    letter-spacing: 0.05em;
+    margin: 1em;
+}
+
+/*===============
+     Projects
+================*/
+
+.projects{
+    display: grid;
+    height: 900px;
+    margin: -5em 5em;
+    grid-template-columns: [pa] 3fr [pb] 4fr [pc] 3fr [pd];
+    grid-template-rows: [a] 1fr [b] 1fr [c] 1fr [d] 1fr [e] 2fr [f] 1fr [g];
+    align-items: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-hr-line{
+    display: inline-flex;
+    grid-column: 1/-1;
+    grid-row: a/b;
+    justify-content: center;
+    margin: 1.8em 0em;
+}
+.prj-line{
+    width: 90%;
+}
+
+.project-hr-line img{
+    display: inline-block;
+    grid-column: 1/-1;
+    grid-row: a/b;
+    height: 5em;
+    filter: drop-shadow(0px 10px 4px #b1b1b1);
+}
+.projects h2{
+    grid-area: b/ pb / c / pc;
+    font-family: 'Encode Sans Semi Expanded', sans-serif;
+    font-weight:bold;
+    color: #35215D;
+    font-size: 3.5em;
+    text-shadow: 0px 5px 12px #EC635E50;
+    letter-spacing: 0.05em;
+    margin: 0.5em;
+}
+
+.prj-images{
+    display: contents;
+}
+.prj-images img{
+    border-radius: 1em;
+    border: 1px solid #d9d9d9;
+    filter: drop-shadow(0px 4px 10px #00000025);
+}
+.prj-1{
+    grid-area: c / pa/ e / pb;
+    height: 15em;
+    width: 20em;
+    margin: 1em;
+
+}
+.prj-2{
+    grid-area: e / pa/ g / pb;
+    height: 22em;
+    width: 20em;
+    margin: 1em;
+
+}
+.prj-3{
+    grid-area: d / pb/ f / pc;
+    height: 35sem;
+    width: 35em;
+    margin-top: -4em;
+}
+.prj-4{
+    grid-area: c / pc/ e / pd;
+    height: 15em;
+    width: 20em;
+    margin: 1em;
+
+}
+.prj-5{
+    grid-area: e / pc/ g / pd;
+    height: 22em;
+    width: 20em;
+    object-fit: cover;
+    margin: 1em;
+}
+
+/*=================
+      FOOTER
+==================*/
+
+footer{
+    background-color: #000;
+    display: flex;
+    height: 7em;
+    margin: 8em 0em;
+    object-fit: cover;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+
+}
+.footer-icons{
+    margin: 0em -6em 0em 6em
+}
+.footer-icons svg{
+    height: 3em;
+    margin: 2em;
+}
+footer img{
+    width: 8em;
+    margin: 1em 6em 0em -6em;
+}
+
