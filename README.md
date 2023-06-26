@@ -1,6 +1,6 @@
 # wmad-midtermProject-portfolio.github.io
 THIS IS MY FIRST PORTFOLIO PROJECT. 
-It is not responsive. works fine on 13" screens
+It is not responsive. works fine on 13" screens.
 it will be responsive soon...
 
 ![MAIN-MockUp](https://github.com/GktgYildiz/wmad-midtermProject-portfolio.github.io/assets/102765970/4bae8c3d-6e6b-4939-bc35-3f2435939cf4)
